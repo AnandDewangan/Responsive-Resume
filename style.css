@@ -1,0 +1,124 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-content{
+    display: grid;
+    grid-template-columns: 300px auto;
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+/* Left Section */
+.left-section{
+    grid-column: span 1;
+    background: linear-gradient(-360deg, #1cbed3, #ff952e);
+}
+.left-content{
+    padding: 1rem;
+}
+.profile-image img{
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 30%;
+    width: 80%;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+    color: whitesmoke;
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+.social-media{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.social-media i{
+    font-size: 2rem;
+}
+.contact{
+    padding: 2rem;
+}
+a{
+    text-decoration: none;
+}
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding: 0.5rem 0;
+}
+.progress-bar{
+    border: 3px solid white;
+}
+.java{
+    width: 85%;
+}
+.html{
+    width: 90%;
+}
+.css{
+    width: 80%;
+}
+.js{
+    width: 10%;
+}
+
+/* Right Section */
+.right-section{
+    grid-column: 1 span end;
+}
+.right-main-content{
+    padding: 2rem 3rem;
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    color: #068393;
+}
+p{
+    padding: 0.5rem;
+}
+table{
+    border: 3px double #1cbed3;
+    width: 100%;
+    box-shadow: 3px 2px 6px darkcyan;
+}
+td{
+    padding: 0.5rem;
+}
+
+/* Media Queries */
+
+@media screen and (width < 674px) {
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
